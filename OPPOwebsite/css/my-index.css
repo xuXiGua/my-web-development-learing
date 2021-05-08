@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+#topLine {
+    height: 10px;
+    min-width: 1000px;
+    background-color: #009257;
+}
+
+#topBar {
+    height: 35px;
+    min-width: 1000px;
+    background-color: black;
+}
+
+#topBarContent {
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+}
+
+#topBarLeft {
+    float: left;
+}
+#topBarLeft a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+    transition: all;
+}
+#topBarLeft a.xlwb{
+    background: url('../imgs/bgi/icons.png') no-repeat -266px -2px;
+}
+#topBarLeft a.txwb{
+    background: url('../imgs/bgi/icons.png') no-repeat -316px -2px;
+}
+#topBarLeft a.xlwb:hover,
+#topBarLeft a.txwb:hover {
+    background-position-y: -32px;
+}
+#topBarLeft span {
+    color: #009257;
+    line-height: 35px;
+}
+
+#topBarRight {
+    float: right;
+}
+#topBarRight li {
+    list-style: none;
+    display: inline-block;
+    line-height: 35px;
+}
+#topBarRight a {
+    text-decoration: none;
+    color: #B2B2B2;
+    padding: 0 10px 0 10px;
+    border-right: 1px solid #B2B2B2;
+}
+#topBarRight li:last-child a {
+    border: 0;
+    background: url('../imgs/bgi/icons.png') no-repeat 0 -1010px;
+    padding-left: 25px;
+}
+#topBarRight a:hover {
+    color: #009257;
+}
+
+/* nav */
+#nav{
+    height: 75px;
+    background-color: #EEE;
+    position: sticky;
+    top: 0;
+    min-width: 1000px;
+    z-index: 10;
+}
+
+#navContent{
+    height: 100%;
+    width: 900px;
+    margin: 0 auto;
+}
+#navContent ul {
+    float: right;
+}
+#navContent li{
+    list-style: none;
+    display: inline-block;
+}
+#navContent a{
+    text-decoration: none;
+    line-height: 75px;
+    color: #666;
+    padding: 0 15px;
+}
+#navContent a:hover {
+    color: #009257;
+}
+
+/* banner */
+#banner { 
+    min-width: 1000px;
+    position: relative;  
+    height: 10px; 
+}
+#banner img {
+    max-width: 100%;
+    min-width: 1000px;
+    position: absolute;
+    transition: all 1s ease;
+}
+#banner1 {
+    z-index: 3;
+    opacity: 1;
+}
+#banner2{
+    z-index: 2;
+    opacity: 1;
+}
+#banner3{
+    z-index: 1;
+    opacity: 1;
+}
+#banner4{
+    z-index: 0;
+    opacity: 1;
+}
+#banner button[id^='banBtn'] {
+    width: 16px;
+    height: 16px;
+    border-radius: 8px;
+    border: 0;
+    position: absolute;
+    z-index: 4;
+    background-color: #B2B2B2;
+    bottom: 20px;
+}
+#banner .active,
+#banner button[id^='banBtn']:hover {
+    background-color: rgb(68, 68, 207);
+    cursor: pointer;
+}
+#banBtn1 {
+    left: calc(50% - 56px);
+}
+#banBtn2 {
+    left: calc(50% - 24px);
+}
+#banBtn3 {
+    left: calc(50% + 8px);
+}
+#banBtn4 {
+    left: calc(50% + 40px);
+}
+#banl {
+    position: absolute;
+    z-index: 4;
+    color: #B2B2B2;
+    font-size: 60px;
+    top: calc(50% - 0.5em);
+    left: 5px;
+    background-color: transparent;
+    border: 0;
+}
+#banr {
+    position: absolute;
+    z-index: 4;
+    color: #B2B2B2;
+    font-size: 60px;
+    top: calc(50% - 0.5em);
+    right: 5px;
+    background-color: transparent;
+    border: 0;
+}
+#banl:hover,
+#banr:hover {
+    color: rgb(73, 73, 158);
+    cursor: pointer;
+}
