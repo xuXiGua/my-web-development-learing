@@ -8,6 +8,7 @@ function insertAfter(newElememt, targetElement){
     }
   }
 
+// 可使用element.classList.add(value)代替
 function addClass(element, value) {
 // 给element元素添加值为value的class属性
     if (!element.className) {
