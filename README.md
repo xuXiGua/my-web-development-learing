@@ -8,3 +8,5 @@
 </div>
 
 - 文件夹[media-player](https://github.com/xuXiGua/my-web-development-learing/tree/main/media-player)是MDN的web开发教程关于视频API的练习。使用了视频API制作自定义控件，功能包括播放/暂停，停止，快进，快退，修改进度条。
+
+- 文件夹[OPPOwebsite](https://github.com/xuXiGua/my-web-development-learing/tree/main/OPPOwebsite)是OPPO商品页面的模仿，正在完成中...
