@@ -142,7 +142,7 @@
     background-color: #B2B2B2;
     bottom: 20px;
 }
-#banner .active,
+#banner button[id^='banBtn'].active,
 #banner button[id^='banBtn']:hover {
     background-color: rgb(68, 68, 207);
     cursor: pointer;
