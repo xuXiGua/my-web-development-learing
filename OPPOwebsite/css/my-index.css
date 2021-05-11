@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-/* header */
+/************* header *************/
 #topLine {
-    height: 10px;
+    height: 6px;
     min-width: 1000px;
     background-color: #009257;
 }
@@ -72,7 +72,7 @@
     color: #009257;
 }
 
-/* nav */
+/************ nav ***************/
 #nav{
     height: 75px;
     background-color: #EEE;
@@ -80,6 +80,7 @@
     top: 0;
     min-width: 1000px;
     z-index: 10;
+    font-size: 18px;
 }
 
 #navContent{
@@ -104,7 +105,7 @@
     color: #009257;
 }
 
-/* banner */
+/************* banner *************/
 #banner { 
     min-width: 1000px;
     position: relative;  
@@ -183,4 +184,313 @@
 #banr:hover {
     color: rgb(73, 73, 158);
     cursor: pointer;
+}
+
+/********* main ************/
+/********* star *********/
+#star {
+    background-color: #f6f6f6;
+    min-width: 1000px;
+}
+#starContent {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+#starLinks {
+    padding-top: 30px;
+    column-count: 4;
+    column-gap: 20px;
+    column-rule: 2px solid #e0dfdf;
+    break-inside: avoid;
+    page-break-inside: avoid;
+}
+.starLink{
+    padding: 10px;
+    transition: 1s all;
+}
+.starLink img {
+    max-width: 100%;
+}
+.starLink a {
+    text-decoration: none;
+}
+.starLink a p:nth-of-type(1) {
+    font-size: 22px;
+    font-weight: bold;
+    color: #2B2B2B;
+    padding-top: 30px;
+}
+.starLink a p:nth-of-type(2) {
+    font-size: 12px;
+    color: #B4B4B4;
+    margin: 6px;
+}
+.starLink a p:nth-of-type(3) {
+    color: #00925F;
+    margin: 0 auto;
+    font-size: 15px;
+    padding-right: 20px;
+    background: url('../imgs/bgi/icons.png') no-repeat -47px -1010px;
+    width: 134px;
+    padding-bottom: 10px;
+}
+.line1 {
+    background-color: #dedede;
+    height: 4px;
+    transition: 1s all;
+}
+.starLink:hover{
+    transform: translate(0, -10px);
+}
+.starLink:hover .line1 {
+    background-color: #009257;
+}
+
+/*********** 配件区 ************/
+#access {
+    background: #f6f6f6;
+    min-width: 1000px;
+}
+#accessContent {
+    width: 1000px;
+    text-align: center;
+    padding: 80px 0;
+    margin: 0 auto;
+}
+#accessGrid {
+    width: 940px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "gridGood1 gridGood8 gridGood4 gridGood4"
+    "gridGood1 gridGood2 gridGood5 gridGood6"
+    "gridGood3 gridGood3 gridGood5 gridGood7";
+    grid-gap: 20px;
+    padding: 40px 30px;
+    margin: 0 auto;
+}
+#gridGood1{
+    grid-area: gridGood1;
+    background-color: white;
+    position: relative;
+    transition: 1s all;
+}
+#gridGood2{
+    grid-area: gridGood2;
+    background-color: white;
+    position: relative;
+    transition: 1s all;
+}
+#gridGood3{
+    grid-area: gridGood3;
+    background-color: white;
+    position: relative;
+    transition: 1s all;
+}
+#gridGood4{
+    grid-area: gridGood4;
+    background-color: white;
+    position: relative;
+    transition: 1s all;
+}
+#gridGood5{
+    grid-area: gridGood5;
+    background-color: white;
+    position: relative;
+    transition: 1s all;
+}
+#gridGood6{
+    grid-area: gridGood6;
+    background-color: white;
+    position: relative;
+    transition: 1s all;
+}
+#gridGood7{
+    grid-area: gridGood7;
+    background-color: white;
+    position: relative;
+    transition: 1s all;
+}
+#gridGood8{
+    grid-area: gridGood8;
+    background-color: white;
+    border: 5px solid #eaeaea;
+    width: 210px;
+    height: 216;
+}
+#accessGrid img {
+    max-width: 100%;
+}
+#gridGood8>p {
+    font-size: 11px;
+    font-weight: bold;
+    color: #576267;
+    padding: 20px 0 10px 0;
+    
+}
+#gridGood8>a {
+    text-decoration: none;
+    display: block;
+    padding-top: 15px;
+    font-size: 14px;
+    color: #666;
+    margin: 0 auto;
+    padding-right: 20px;
+    background: url('../imgs/bgi/icons.png') no-repeat -74px -996px;
+    width: 130px;
+}
+#accessItems {
+    column-count: 2;
+    width: 70%;
+    margin: 15px auto;
+    border-top: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e6e6e6;
+}
+#accessItems a {
+    text-decoration: none; 
+    display: block;
+    padding: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+#gridGood8 a:hover {
+    color: #009257;
+}
+.line2 {
+    position: absolute;
+    bottom: 0;
+    background-color: #dedede;
+    height: 4px;
+    width: 100%;
+    transition: 1s all;
+}
+#gridGood1:hover,
+#gridGood2:hover,
+#gridGood3:hover,
+#gridGood4:hover,
+#gridGood5:hover,
+#gridGood6:hover,
+#gridGood7:hover{
+    transform: translate(0, -10px);
+}
+#gridGood1:hover .line2,
+#gridGood2:hover .line2,
+#gridGood3:hover .line2,
+#gridGood4:hover .line2,
+#gridGood5:hover .line2,
+#gridGood6:hover .line2,
+#gridGood7:hover .line2{
+    background-color: #009257;
+}
+
+/****** world *******/
+#world {
+    min-width: 1000px;
+    background-color: #eaeaea;
+    text-align: center;
+    padding-top: 50px;
+}
+#worldContent {
+    padding-top: 30px;
+    margin: 0 auto;
+    width: 1000px;
+    display: flex;
+    gap: 20px;
+}
+#worldContent img {
+    max-width: 100%;
+}
+#worldPics {
+    flex: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+    'pic1 pic2'
+    'pic3 pic4';
+}
+#worldPics :nth-child(1){
+    grid-area: pic1;
+    transition: 1s all;
+}
+#worldPics :nth-child(2){
+    grid-area: pic2;
+    transition: 1s all;
+}
+#worldPics :nth-child(3){
+    grid-area: pic3;
+    transition: 1s all;
+}
+#worldPics :nth-child(4){
+    grid-area: pic4;
+    transition: 1s all;
+}
+#worldPics>div:hover{
+    transform: translate(0, -10px);
+}
+#worldPics>div:hover .line1{
+    background-color: #009257;
+}
+#worldNewsWeibo {
+    width: 400px;
+    height: 486px;
+    flex: 1;
+    font-size: 0;
+    position: relative;
+}
+#worldNewsWeibo button {
+    background-color: #dadada;
+    border: 0;
+    width: 50%;
+    line-height: 40px;
+    font-size: 16px;
+    display: inline-block;
+    cursor: pointer;
+}
+#worldNewsWeibo button.active {
+    background-color: white;
+    border-top: 2px solid #009257;
+    
+}
+#newsList{
+    font-size: 14px;
+    background-color: white;
+    padding: 10px 0;
+    position: absolute;
+    z-index: 2;
+}
+#weiboList {
+    font-size: 14px;
+    position: absolute;
+    top: 52px;
+    z-index: 1;
+}
+.item{
+    width: 90%;
+    height:80px;
+    margin: 20px auto;
+    background-color: #f6f6f6;
+}
+
+.item img {
+    height: 80px;
+    float: left;
+    margin-right: 10px;
+}
+.item p{
+    padding: 20px 10px 0 10px;
+    color: #666;
+}
+#newsList>a,
+#weiboList>a {
+    text-decoration: none;
+}
+
+
+#test {
+    height: 50px;
 }
