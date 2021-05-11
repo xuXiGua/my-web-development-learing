@@ -5,6 +5,7 @@ function setBannerHeight(){
     banner.style.height = banner1.getBoundingClientRect().height + 'px';
 }
 window.addEventListener('resize', setBannerHeight);
+window.addEventListener('load', setBannerHeight);
 
 // 轮播
 function setBanner() {
@@ -42,7 +43,6 @@ function setBanner() {
     }
 
     function showPic(i) {
-        console.log(index);
         allDisappear();
         switch (i) {
             case 1:
@@ -82,8 +82,8 @@ function setBanner() {
     btn4.addEventListener('click', function(){showPic(4)});
     
     btnle.addEventListener('click', function(){
-        index--;console.log(index);
-        index = dealIndex(index);console.log(index);
+        index--;
+        index = dealIndex(index);
         showPic(index);
     });
     btnr.addEventListener('click', function(){
@@ -96,15 +96,32 @@ function setBanner() {
         index++;
         index = dealIndex(index);
         showPic(index);
-        console.log(index);
     }, 5000);
 }
+window.addEventListener('load', setBanner);
 
+function setWorldButton(){
+    const btns = document.querySelectorAll('#worldNewsWeibo button');
+    const btn1 = btns[0];
+    const btn2 = btns[1];
+    const newsPancel = document.querySelector('#newsList');
+    const weiboPancel = document.querySelector('#weiboList');
 
-
-
-
-window.onload = function(){
-    setBannerHeight();
-    setBanner();
+    btn1.addEventListener('click', function(){
+        if(btn2.classList.contains('active')){
+            btn2.classList.remove('active');
+        }
+        btn1.classList.add('active');
+        weiboPancel.style.zIndex = '1';
+        newsPancel.style.zIndex = '2';
+    });
+    btn2.addEventListener('click', function(){
+        if(btn1.classList.contains('active')){
+            btn1.classList.remove('active');
+        }
+        btn2.classList.add('active');
+        weiboPancel.style.zIndex = '2';
+        newsPancel.style.zIndex = '1';
+    });
 }
+window.addEventListener('load', setWorldButton);
